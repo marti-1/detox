@@ -1,12 +1,24 @@
 {
-  "name": "Getting Started Example",
-  "version": "1.0",
-  "description": "Build an Extension!",
-  "permissions": ["activeTab"],
-  "content_scripts": [{
-     "matches": ["*://*.youtube.com/"],
-     "js": ["contentScript.js"],
-     "run_at": "document_end"
-   }],
-  "manifest_version": 2
+    "name": "Getting Started Example",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["activeTab"],
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["jquery-3.3.1.slim.min.js", "youtube.js"],
+        "run_at": "document_end"
+    }, {
+        "matches": ["*://medium.com/*"],
+        "js": ["jquery-3.3.1.slim.min.js", "medium.js"],
+        "run_at": "document_end"
+    }, {
+        "matches": ["*://stackoverflow.com/*"],
+        "js": ["jquery-3.3.1.slim.min.js", "stackoverflow.js"],
+        "run_at": "document_end"
+    }, {
+        "matches": ["*://*.khanacademy.org/*"],
+        "js": ["jquery-3.3.1.slim.min.js", "khanacademy.js"],
+        "run_at": "document_end"
+    }],
+    "manifest_version": 2
 }
