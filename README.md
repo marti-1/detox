@@ -1,6 +1,6 @@
 # Detox
 
-Removes crap from popular websites.
+Chrome extensions that removes crap from popular websites.
 
 ## Supported websites
 
