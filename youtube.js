@@ -1,15 +1,15 @@
 function deleteCrap() {
+  if (location.pathname == '/') {
+    $("#contents").remove();
+    $("ytd-two-column-browse-results-renderer").remove();
+  }
 
-    if (location.pathname == '/') {
-        $("#contents").remove();
-        $("ytd-two-column-browse-results-renderer").remove();
-    }
-
-    if (/\/watch/.test(location.pathname)) {
-        $("#related").remove();
-        $("#subscribe-button").remove();
-        $("#comments").remove();
-    }
+  if (/\/watch/.test(location.pathname)) {
+    $("#related").remove();
+    $("#subscribe-button").remove();
+    $("#comments").remove();
+    $("#menu-container").remove();
+  }
 }
 
 deleteCrap();
