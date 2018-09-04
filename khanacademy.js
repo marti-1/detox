@@ -4,4 +4,5 @@ function deleteCrap() {
     $("[class^=classUpsellContainer]").remove();
 }
 
+deleteCrap();
 setInterval(deleteCrap, 1000);

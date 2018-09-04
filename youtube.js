@@ -12,4 +12,5 @@ function deleteCrap() {
     }
 }
 
+deleteCrap();
 setInterval(deleteCrap, 1000);

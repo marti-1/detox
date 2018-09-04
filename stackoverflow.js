@@ -5,4 +5,5 @@ function deleteCrap() {
     $(".bottom-notice").remove();
 }
 
+deleteCrap();
 setInterval(deleteCrap, 1000);

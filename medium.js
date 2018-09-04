@@ -4,4 +4,5 @@ function deleteCrap() {
     $(".u-paddingTop20").remove();
 }
 
+deleteCrap();
 setInterval(deleteCrap, 1000);
