@@ -1,7 +1,7 @@
 {
-    "name": "Getting Started Example",
+    "name": "Detox",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Removes crap content from popular websites.",
     "permissions": ["activeTab"],
     "content_scripts": [{
         "matches": ["*://*.youtube.com/*"],
