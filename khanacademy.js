@@ -1,7 +1,6 @@
 function deleteCrap() {
-    $(".bibliotron-notification").remove()
     $("[class^=sharingFooterWrapper]").remove();
-    $("[class^=classUpsellContainer]").remove();
+    $(".urgent-wrapper").remove();
 }
 
 deleteCrap();

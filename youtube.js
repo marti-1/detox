@@ -1,12 +1,13 @@
 function deleteCrap() {
   if (location.pathname == '/') {
-    $("#contents").remove();
-    $("ytd-two-column-browse-results-renderer").remove();
+    $("#contents").hide();
+    $("#spinner").remove();
+  } else {
+    $("#contents").show();
   }
 
   if (/\/watch/.test(location.pathname)) {
-    $("#related").remove();
-    $("#subscribe-button").remove();
+    $("#secondary").remove();
     $("#comments").remove();
     $("#menu-container").remove();
   }
