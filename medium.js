@@ -8,6 +8,7 @@ function deleteCrap() {
     $(".js-elevateBottomRecirc").remove();
     $(".elevateSidebar").remove();
     $(".tags").remove();
+    $(".js-stickyFooter").remove();
 }
 
 deleteCrap();
